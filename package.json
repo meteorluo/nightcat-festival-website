@@ -14,7 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "motion": "^10.17.0",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
