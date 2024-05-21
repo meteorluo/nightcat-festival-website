@@ -6,7 +6,6 @@ import autoprefixer from "autoprefixer";
 import postcssPresetEnv from "postcss-preset-env";
 
 export default defineConfig({
-  // 指定預設的根目錄
   root: path.resolve(__dirname, "src"),
 
   resolve: {
