@@ -14,7 +14,6 @@ export default defineConfig({
         plugins: [
           autoprefixer(),
           postcssPresetEnv({
-            // 配置选项
             stage: 3,
             features: {
               "custom-properties": false,
