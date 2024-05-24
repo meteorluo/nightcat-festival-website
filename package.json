@@ -1,9 +1,12 @@
 {
   "name": "nightcat-festival_website",
   "version": "1.0.0",
+  "homepage": "https://meteorluo.github.io/nightcat-festival-website/",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite",
     "build": "vite build",
@@ -16,15 +19,13 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
-    "motion": "^10.17.0",
-    "normalize.css": "^8.0.1"
+    "motion": "^10.17.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "postcss-preset-env": "^9.5.13",
     "sass": "^1.77.2",
-    "sass-loader": "^14.2.1",
     "vite": "^5.2.11"
   }
 }

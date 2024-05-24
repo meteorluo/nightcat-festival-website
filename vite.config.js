@@ -6,6 +6,7 @@ import autoprefixer from "autoprefixer";
 import postcssPresetEnv from "postcss-preset-env";
 
 export default defineConfig({
+  base: "/nightcat-festival-website/",
   root: path.resolve(__dirname, "src"),
 
   resolve: {

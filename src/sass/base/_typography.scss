@@ -1,17 +1,15 @@
 //font
 @font-face {
   font-family: "Noto Sans TC";
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Black.ttf") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Bold.ttf") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-ExtraBold.ttf")
-    format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-ExtraLight.ttf")
-    format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Light.ttf") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Medium.ttf") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Regular.ttf") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-SemiBold") format("TTF");
-  src: url("../../font/NotoSansTC/static/NotoSansTC-Thin.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Black.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Bold.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-ExtraBold.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-ExtraLight.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Light.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Medium.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Regular.ttf") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-SemiBold") format("TTF");
+  src: url("/font/NotoSansTC/static/NotoSansTC-Thin.ttf") format("TTF");
 }
 
 * {
