@@ -1,0 +1,17 @@
+header {
+  .container {
+    padding: 0 calc(84 / 16) * 1rem;
+    height: calc(72 / 16) * 1rem;
+    box-shadow: 0 0 10px 0 rgba(217, 217, 217, 0.6);
+    border-radius: 50px;
+  }
+  .navbar-brand {
+    gap: 10px;
+    img {
+      width: 3rem;
+    }
+  }
+  .navbar-nav {
+    gap: calc(88 / 16) * 1rem;
+  }
+}

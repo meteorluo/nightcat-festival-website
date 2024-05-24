@@ -1,6 +1,6 @@
 //font
 @font-face {
-  font-family: "Noto Sans TCa";
+  font-family: "Noto Sans TC";
   src: url("../../font/NotoSansTC/static/NotoSansTC-Black.ttf") format("TTF");
   src: url("../../font/NotoSansTC/static/NotoSansTC-Bold.ttf") format("TTF");
   src: url("../../font/NotoSansTC/static/NotoSansTC-ExtraBold.ttf")
@@ -14,4 +14,64 @@
   src: url("../../font/NotoSansTC/static/NotoSansTC-Thin.ttf") format("TTF");
 }
 
+* {
+  font-family: Noto Sans TC, sans-serif;
+}
+
 //font-size
+//calc( px / 16) * 1rem
+$decoration: calc(12 / 16) * 1rem;
+$decoration2: calc(14 / 16) * 1rem;
+$basis: calc(16 / 16) * 1rem;
+$nav: calc(16 / 16) * 1rem;
+$subtitle: calc(24 / 16) * 1rem;
+$title: calc(48 / 16) * 1rem;
+$h2: calc(64 / 16) * 1rem;
+$h1: calc(128 / 16) * 1rem;
+
+//font-group
+//figma use % to define letter-spacing
+//use calc(font-size*%)*1px transform % to px
+@mixin decoration {
+  font-weight: 500;
+  font-size: $decoration;
+  letter-spacing: calc($decoration * 0.35) * 1px;
+}
+
+@mixin decoration2 {
+  font-weight: 400;
+  font-size: $decoration2;
+  letter-spacing: calc($decoration2 * 0.2) * 1px;
+}
+
+@mixin basis {
+  font-weight: 400;
+  font-size: $basis;
+  letter-spacing: calc($basis * 0.16) * 1px;
+  line-height: 160%;
+}
+
+@mixin nav {
+  font-weight: 500;
+  font-size: $nav;
+}
+
+@mixin subtitle {
+  font-weight: 700;
+  font-size: $subtitle;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: $title;
+}
+
+@mixin h2 {
+  font-weight: 700;
+  font-size: $h2;
+}
+
+@mixin h1 {
+  font-weight: 700;
+  font-size: $h1;
+}

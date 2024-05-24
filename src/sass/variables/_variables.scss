@@ -1,3 +1,24 @@
+//--------------------
+//--------------------
+//目錄
+//1.bootstrap variable
+//  function
+//  variables
+//  variables-dark
+
+//2.custom variable
+//  breakpoint
+//  color
+//--------------------
+//--------------------
+
+//1.bootstrap
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+//2.custom variable
+//breakpoint
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -6,3 +27,34 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1600px,
 );
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1384px,
+);
+
+//color
+$custom-primary-li: #ffffff;
+$custom-primary: #d9d9d9;
+$custom-bg-li: #1d1d1d;
+$custom-bg: #141414;
+$custom-bg-da: #000000;
+$custom-correct: #1bbe00;
+$custom-error-li: #ffdddd;
+$custom-error: #ff4d4d;
+
+$custom-colors: (
+  "custom-primary-li": $custom-primary-li,
+  "custom-primary": $custom-primary,
+  "custom-bg-li": $custom-bg-li,
+  "custom-bg": $custom-bg,
+  "custom-bg-da": $custom-bg-da,
+  "custom-correct": $custom-correct,
+  "custom-error-li": $custom-error-li,
+  "custom-error": $custom-error,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
