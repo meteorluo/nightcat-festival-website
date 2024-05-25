@@ -1,0 +1,14 @@
+//custom nav-link
+.nav-link,
+.nav-link:hover {
+  color: $primary;
+}
+
+header {
+  nav div.container {
+    box-shadow: 0 0 10px 0 rgba(217, 217, 217, 0.6);
+    img {
+      width: 3rem;
+    }
+  }
+}
