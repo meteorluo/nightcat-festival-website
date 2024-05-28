@@ -4,6 +4,11 @@ $enable-negative-margins: true;
 //禁止深色模式
 $enable-dark-mode: flase;
 
+//grid
+$grid-columns: 16;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 16;
+
 //spacer
 $spacer: 1rem;
 $spacers: (

@@ -1,0 +1,49 @@
+.cover-left {
+  position: relative;
+
+  .illustration {
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    img {
+      width: calc(51% - 1.5dvh);
+    }
+    & img:nth-child(1) {
+      position: relative;
+      z-index: 15;
+    }
+    & img:nth-child(2) {
+      position: relative;
+      z-index: 10;
+      right: calc(1.5rem + 0.25dvh);
+    }
+  }
+
+  .lightstar-bg {
+    position: absolute;
+    z-index: 5;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    svg {
+      width: 100%;
+      animation: colorchange 2.6s ease-in-out 0.8s infinite alternate-reverse
+        forwards;
+    }
+  }
+}
+
+//bg-animation
+@keyframes colorchange {
+  from {
+    fill: red;
+  }
+  to {
+    fill: $body-bg;
+  }
+}
