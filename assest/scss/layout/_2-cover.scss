@@ -1,31 +1,36 @@
+.cover {
+  height: 100dvh;
+}
+
 .cover-left {
   position: relative;
 
   .illustration {
     height: 100%;
+    width: 100%;
     position: absolute;
     z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
 
-    img {
-      width: calc(51% - 1.5dvh);
-    }
-    & img:nth-child(1) {
-      position: relative;
-      z-index: 15;
-    }
-    & img:nth-child(2) {
-      position: relative;
+    img:nth-child(1) {
+      height: 84%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 10;
-      right: calc(1.5rem + 0.25dvh);
+    }
+    img:nth-child(2) {
+      height: 84%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 5;
     }
   }
 
   .lightstar-bg {
     position: absolute;
-    z-index: 5;
+    z-index: -1;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);

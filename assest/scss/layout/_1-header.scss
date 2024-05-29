@@ -1,27 +1,31 @@
 header {
-  .container {
+  .container-lg {
+    background-color: aqua;
     box-shadow: 0 0 10px 0 rgba(217, 217, 217, 0.6);
-  }
-  .navbar-brand {
-    svg {
-      transition: fill 0.2s $custon-transition;
-      width: 3rem;
-      fill: $secondary;
-    }
-    &:hover {
+
+    .navbar-brand {
       svg {
+        transition: fill 0.2s $custon-transition;
         width: 3rem;
-        fill: $primary;
+        fill: $secondary;
+      }
+      &:hover {
+        svg {
+          width: 3rem;
+          fill: $primary;
+        }
       }
     }
-  }
-  .navbar-toggler-icon:hover {
-    transition: all 0.2s $custon-transition;
-    background-image: $navbar-dark-toggler-icon-bg-hover;
-  }
-  .offcanvas {
-    .btn-close:hover {
-      background-image: $btn-close-bg-hover;
+
+    .navbar-toggler-icon:hover {
+      transition: all 0.2s $custon-transition;
+      background-image: $navbar-dark-toggler-icon-bg-hover;
+    }
+
+    .offcanvas {
+      .btn-close:hover {
+        background-image: $btn-close-bg-hover;
+      }
     }
   }
 }

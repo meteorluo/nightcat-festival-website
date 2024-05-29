@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NotoSansTC";
+  src: url(../font/NotoSansTC/NotoSansTC-Black.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Bold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-ExtraBold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-ExtraLight.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Light.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Medium.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Regular.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-SemiBold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Thin.ttf) format("ttf");
+}
+
+@mixin decoration {
+  font-family: "NotoSansTC", sans-serif;
+  font-size: 12px;
+}
