@@ -1,0 +1,85 @@
+//負值margin啟用
+$enable-negative-margins: true;
+
+//禁止深色模式
+$enable-dark-mode: flase;
+
+//grid
+$grid-columns: 16;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 16;
+
+//spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer * 1,
+  3: $spacer * 1.5,
+  4: $spacer * 2,
+  5: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 3.5,
+  8: $spacer * 4,
+  9: $spacer * 4.5,
+  10: $spacer * 5,
+  11: $spacer * 5.5,
+  12: $spacer * 6,
+  13: $spacer * 6.5,
+  14: $spacer * 7,
+);
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+//container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1384px,
+);
+
+//border-radius
+$border-radius-sm: 15px;
+$border-radius: 30px;
+$border-radius-lg: 60px;
+
+//custom color system
+$light: #ffffff; //primary-li
+$primary: #d9d9d9;
+$secondary: #959595; //primary-dark
+$success: #1bbe00;
+$danger: #ff4d4d;
+
+//bg
+$body-color: #141414;
+$body-bg: #141414;
+$body-secondary-bg: #1d1d1d; //bg-light
+$body-tertiary-bg: #000000; //bg-dark
+
+//navbar-dark
+$navbar-dark-color: $secondary;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+$navbar-dark-disabled-color: $primary;
+$navbar-dark-icon-color: $secondary;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-icon-bg-hover: url(../img/icon/navbar-dark-toggler-icon-bg-hover.svg);
+$navbar-dark-toggler-border-color: $primary;
+$navbar-dark-brand-color: $navbar-dark-active-color;
+$navbar-dark-brand-hover-color: $navbar-dark-active-color;
+
+//close button
+$btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$secondary}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
+$btn-close-bg-hover: url(../img/icon/btn-close-bg-hover.svg);
+
+//transition
+$custon-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55);

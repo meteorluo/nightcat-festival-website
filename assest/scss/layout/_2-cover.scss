@@ -1,0 +1,54 @@
+.cover {
+  height: 100dvh;
+}
+
+.cover-left {
+  position: relative;
+
+  .illustration {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+
+    img:nth-child(1) {
+      height: 84%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    img:nth-child(2) {
+      height: 84%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+  }
+
+  .lightstar-bg {
+    position: absolute;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    svg {
+      width: 100%;
+      animation: colorchange 2.6s ease-in-out 0.8s infinite alternate-reverse
+        forwards;
+    }
+  }
+}
+
+//bg-animation
+@keyframes colorchange {
+  from {
+    fill: red;
+  }
+  to {
+    fill: $body-bg;
+  }
+}

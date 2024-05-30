@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "NotoSansTC";
+  src: url(../font/NotoSansTC/NotoSansTC-Black.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Bold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-ExtraBold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-ExtraLight.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Light.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Medium.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Regular.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-SemiBold.ttf) format("ttf");
+  src: url(../font/NotoSansTC/NotoSansTC-Thin.ttf) format("ttf");
+}
+
+//size
+$decoration: calc(12 / 16) * 1rem;
+$decoration2: calc(12 / 16) * 1rem;
+$basis: calc(16 / 16) * 1rem;
+$nav: calc(16 / 16) * 1rem;
+$subtitle: calc(24 / 16) * 1rem;
+$title: calc(48 / 16) * 1rem;
+$h2: calc(64 / 16) * 1rem;
+$h1: calc(128 / 16) * 1rem;
+
+//figma transfer weight
+$Thin: 100;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+$ExtraBold: 800;
+$Black: 900;
+
+//font-group
+@mixin decoration {
+  font-size: $decoration;
+  font-weight: $Medium;
+  letter-spacing: calc($decoration * 0.35);
+}
+
+@mixin decoration2 {
+  font-size: $decoration2;
+  font-weight: $Regular;
+  letter-spacing: calc($decoration * 0.2);
+}
+
+@mixin basis {
+  font-size: $basis;
+  font-weight: $Regular;
+  letter-spacing: calc($decoration * 0.16);
+  line-height: calc($decoration * 1.6);
+}
+
+@mixin nav {
+  font-size: $nav;
+  font-weight: $Medium;
+}
+
+@mixin subtitle {
+  font-size: $subtitle;
+  font-weight: $Bold;
+}
+
+@mixin title {
+  font-size: $title;
+  font-weight: $Bold;
+}
+
+@mixin h2 {
+  font-size: $h2;
+  font-weight: $Bold;
+}
+
+@mixin h1 {
+  font-size: $h1;
+  font-weight: $Black;
+}
+
+//font-class
+body {
+  font-family: "NotoSansTC", sans-serif !important;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include title;
+}
+
+h4 {
+  @include subtitle;
+}
+
+p {
+  @include basis;
+}
+
+.nav-link {
+  @include nav;
+}
