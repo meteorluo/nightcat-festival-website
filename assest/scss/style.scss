@@ -1,7 +1,7 @@
 //bs
 @import "../../node_modules/bootstrap/scss/functions";
 
-//custom variables
+//custom bootstrap variables
 @import "./custom-variables";
 @import "./typography";
 
@@ -38,7 +38,9 @@ $grays: ();
 @import "../../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
-//custom
+//animation
+@import "./animation/breathing-light";
+//page
 @import "./layout/1-header";
 @import "./layout/2-cover";
 @import "./layout/3-about";

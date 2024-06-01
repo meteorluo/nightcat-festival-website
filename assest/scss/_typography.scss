@@ -53,8 +53,8 @@ $Black: 900;
 }
 
 @mixin nav {
-  font-size: $nav;
-  font-weight: $Medium;
+  font-size: $nav !important;
+  font-weight: $Medium !important;
 }
 
 @mixin subtitle {

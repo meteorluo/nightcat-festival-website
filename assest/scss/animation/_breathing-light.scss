@@ -1,0 +1,13 @@
+@keyframes breathing-light {
+  from {
+    fill: red;
+  }
+  to {
+    fill: $body-bg;
+  }
+}
+
+@mixin animation-breathing-light {
+  animation: breathing-light 2.6s ease-in-out 0.8s infinite alternate-reverse
+    forwards;
+}
