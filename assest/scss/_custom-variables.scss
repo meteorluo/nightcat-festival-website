@@ -2,7 +2,7 @@
 $enable-negative-margins: true;
 
 //禁止深色模式
-$enable-dark-mode: flase;
+$enable-dark-mode: false;
 
 //grid
 $grid-columns: 16;
@@ -27,6 +27,8 @@ $spacers: (
   12: $spacer * 6,
   13: $spacer * 6.5,
   14: $spacer * 7,
+
+  5dvh: 5dvh,
 );
 
 //breakpoints
@@ -38,15 +40,18 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1600px,
 );
-//container
+//container --lg以上增加24抵銷外部
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 936px,
-  xl: 1140px,
+  lg: 896px,
+  xl: 1152px,
   xxl: 1408px,
-  //增加24抵銷外部(原1324)
 );
+
+//ms以下
+$ms-width: 90%;
+// $ms-navbar-width: 95%;
 
 //border-radius
 $border-radius-sm: 15px;
@@ -54,7 +59,6 @@ $border-radius: 30px;
 $border-radius-lg: 60px;
 
 //custom color system
-$aaa: white;
 $light: #ffffff; //primary-li
 $primary: #d9d9d9;
 $secondary: #959595; //primary-dark
@@ -83,5 +87,22 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color;
 $btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$secondary}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
 $btn-close-bg-hover: url(../img/icon/btn-close-bg-hover.svg);
 
-//transition
-$custon-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+//transition (ease in and back out)
+$ease-in-and-back-out: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+//smile icon
+:root {
+  --smile-icon-w: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --smile-icon-w: 2.5rem;
+  }
+}
+
+//offcanvas
+$offcanvas-horizontal-width: 20dvh;
+
+//gradient
+// $neo-gradient:

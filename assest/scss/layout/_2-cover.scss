@@ -1,6 +1,5 @@
 .cover {
-  height: 100dvh;
-  padding: 20dvh 0 0 0;
+  padding-top: calc(var(--smile-icon-w) + 10vh + 16px);
 }
 
 .cover-right {
@@ -8,7 +7,7 @@
 
   .illustration {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 1.5rem);
     position: absolute;
     z-index: 10;
 

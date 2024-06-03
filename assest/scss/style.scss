@@ -40,6 +40,8 @@ $grays: ();
 
 //animation
 @import "./animation/breathing-light";
+@import "./animation/spin";
+
 //page
 @import "./layout/1-header";
 @import "./layout/2-cover";
@@ -52,6 +54,6 @@ $grays: ();
 
 @media (max-width: 992px) {
   .container-lg {
-    width: 80%;
+    width: $ms-width;
   }
 }
